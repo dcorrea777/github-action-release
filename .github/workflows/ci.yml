@@ -1,0 +1,14 @@
+name: ci
+
+on: 
+  push:
+    branches-ignore:
+      - main
+
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 teste executado com sucesso"
